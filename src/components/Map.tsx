@@ -30,7 +30,7 @@ const MovingMarker = ({
 				position={[loc.lat, loc.lon]}
 				icon={
 					new Icon({
-						iconUrl: '/markers/blue_icon.png',
+						iconUrl: 'markers/blue_icon.png',
 						iconSize: [20, 35],
 						iconAnchor: [12, 41],
 						popupAnchor: [1, -34],
