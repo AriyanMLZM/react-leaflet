@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# Leaflet Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Map Component with custom Markers, Popups and Dark Mode layers.
 
-Currently, two official plugins are available:
+[![Youtube Leaflet Map](https://i.postimg.cc/x1y04fJm/thum.png)](https://www.youtube.com/watch?v=3C_s7XclLNA)
+[👆🏼 YouTube](https://www.youtube.com/watch?v=3C_s7XclLNA)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Preview](https://ariyanmlzm.github.io/react-leaflet/)
 
-## React Compiler
+## Techs
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+<table>
+  <tr align="center">
+    <td>React.js</td>
+    <td>Tailwindcss</td>
+    <td>Typescript</td>
+  </tr>
+  <tr align="center">
+    <td><img src="https://i.postimg.cc/7LR71cSh/react.png" width="30px" /></td>
+    <td><img  src="https://i.postimg.cc/3NTknHN8/tailwind.png" width="40px"/></td>
+    <td><img src="https://i.postimg.cc/wjnzcgSY/ts.png" width="30px" /></td>
+  </tr>
+  <tr align="center">
+    <td>Leaflet</td>
+    <td>Vite</td>
+    <td></td>
+  </tr>
+  <tr align="center">
+    <td><img src="https://i.postimg.cc/C5XxXkzm/leaflet.png" width="60px" /></td>
+    <td><img  src="https://i.postimg.cc/W1zX0WDB/vite.png" width="30px"/></td>
+    <td></td>
+  </tr>
+</table>
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Main
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Dark Mode Layer.
+- Custom Markers with Custom Icons.
+- Moving Marker to get Location with Recenter feature.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Technical
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Using **Tailwindcss** for styling.
+- Using **Typescript** for better development.
+- Full **CSR** app with react.js.
+- Using **Leaflet.js** for map implementation.
+- Using **Vite** as project builder.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+##
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[![](https://i.postimg.cc/pTq6WPjr/card.png)](https://github.com/AriyanMLZM)
